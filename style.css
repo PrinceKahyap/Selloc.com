@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  max-width: 1225px;
+  margin: auto;
+  padding: 0 30px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.btn {
+  width: 125px;
+  height: 45px;
+  font-size: 1.6rem;
+  border-radius: 40px;
+  background-image: linear-gradient(45deg, #194bb5, #009de4 50%, #5ac8fa);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  z-index: 100;
+  background-color: hsla(0deg, 0%, 100%, 0.96);
+}
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+header .navbar .nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+header .navbar .nav-menu a {
+  color: #000;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+header .navbar .nav-menu .nav-btn .btn {
+  width: 125px;
+  height: 45px;
+  font-size: 1.6rem;
+  border-radius: 40px;
+  background-image: linear-gradient(45deg, #194bb5, #009de4 50%, #5ac8fa);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+header .navbar .hamburger {
+  cursor: pointer;
+  display: none;
+}
+header .navbar .hamburger .line {
+  width: 35px;
+  height: 3px;
+  margin: 6px;
+  background-color: #000;
+}
+
+.hero {
+  position: relative;
+  top: 100px;
+  width: 100%;
+  height: auto;
+  padding-bottom: 50px;
+}
+.hero .hero-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.hero .hero-container .heroLeft {
+  width: 100%;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.hero .hero-container .heroLeft h1 {
+  font-size: 4.5rem;
+  width: 350px;
+}
+.hero .hero-container .heroLeft h1 span {
+  color: linear-gradient(90deg, #0052d4, #4364f7 50%, #6fb1fc);
+}
+.hero .hero-container .heroLeft h1 .gradient-text {
+  background-image: linear-gradient(90deg, #0052d4, #4364f7 50%, #6fb1fc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hero .hero-container .heroLeft p {
+  font-size: 1.6rem;
+  line-height: 30px;
+  color: rgba(0, 0, 0, 0.6);
+}
+.hero .hero-container .heroLeft p:nth-last-child(2) {
+  color: #000;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.hero .hero-container .heroLeft p:nth-last-child(2) span {
+  color: #000;
+  font-size: 2rem;
+  font-weight: 800;
+}
+.hero .hero-container .heroLeft .hero_btn {
+  display: flex;
+  gap: 20px;
+}
+.hero .hero-container .heroLeft .hero_btn button:nth-child(1) {
+  background-color: #0071e3;
+  background-image: linear-gradient(45deg, #194bb5, #009de4 50%, #5ac8fa);
+  color: #fff;
+  width: 140px;
+  height: 44px;
+  font-size: 1.6rem;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+}
+.hero .hero-container .heroLeft .hero_btn button {
+  border: none;
+  font-size: 1.6rem;
+  color: #000;
+  background-color: transparent;
+}
+.hero .hero-container .heroRight {
+  width: 100%;
+  height: 600px;
+}
+.hero .hero-container .heroRight img {
+  border-radius: 20px;
+}
+
+.say {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+.say h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.say .say-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+.say .say-container .sayBoxs {
+  border-radius: 10px;
+  background-color: #fafafa;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+  padding: 25px;
+}
+.say .say-container .sayBoxs .sayTop {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-bottom: 20px;
+}
+.say .say-container .sayBoxs .sayTop img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.say .say-container .sayBoxs .sayTop .sayTop-info h3 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding-bottom: 5px;
+}
+.say .say-container .sayBoxs .sayTop .sayTop-info ul {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.say .say-container .sayBoxs .sayTop .sayTop-info li img {
+  width: 20px;
+  height: 20px;
+}
+.say .say-container .sayBoxs .sayBottom p {
+  font-size: 1.2rem;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.6);
+  text-align: left;
+}
+
+footer {
+  background-color: #fafafa;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  padding: 20px 0;
+}
+footer .foot_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100%;
+}
+footer .foot_container .footLeft p {
+  font-size: 1.4rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+footer .foot_container .footRight ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+footer .foot_container .footRight ul a {
+  font-size: 1.4rem;
+  color: rgba(0, 0, 0, 0.6);
+}/*# sourceMappingURL=style.css.map */

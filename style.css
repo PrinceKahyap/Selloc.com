@@ -1,244 +1,578 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
 }
 
-html {
-  font-size: 62.5%;
+/* ----------- Global-Classes ------------ */
+.wrapper{
+    max-width: 1225px;
+    margin: auto;
+    padding: 0 30px;
 }
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+main{
+    position: relative;
+}
+.btn{
+    width: 130px;
+    height: 45px;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 500;
+    border-radius: 40px;
+    background-image: linear-gradient(45deg, #194bb5, #009de4 50%, #5ac8fa);
+    transition: 0.3s ease;
+}
+.btn:hover{
+    transform: scale(0.9);
+}
+.gradient-text{
+    background-image: -webkit-gradient(linear, left top, right top, from(#0052d4), color-stop(50%, #4364f7), to(#6fb1fc));
+    background-image: linear-gradient(90deg, #0052d4, #4364f7 50%, #6fb1fc);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* ----------- /Global-Classes ------------ */
 
-.container {
-  max-width: 1225px;
-  margin: auto;
-  padding: 0 30px;
+/* ----------- Header-style ------------ */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    z-index: 100; 
+    background-color: hsla(0, 0%, 100%, 0.96);
 }
+.logo img{
+    width: 70px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.nav-menu{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.nav-menu a{
+    font-size: 1.4rem;
+    color: #000;
+}
+.nav-menu a:hover{
+    text-decoration: underline;
+}
+.hamburger{
+    cursor: pointer;
+    display: none;
+}
+.hamburger .line{
+    width: 35px;
+    height: 3px;
+    margin: 6px;
+    background-color: #000;
+}
+/* ----------- /Header-style ------------ */
 
-li {
-  list-style: none;
+/* ----------- Hero-style ------------ */
+.hero{
+    position: relative;
+    top:90px;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.hero-container{
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+.heroleft{
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   gap: 30px;
+   width: 50%;
+}
+.heroleft h1{
+    font-size: 4.5rem;
+    width: 350px;
+}
+.heroleft p{
+    color: #00000099;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    width: 400px;
+}
+.heroleft p:nth-child(3){
+    color: #000;
+    font-size: 1.6rem;
+}
+.heroleft p:nth-child(3) span{
+    color: #000;
+    font-weight: 900;
+    font-size: 2.5rem;
+}
+.hero-buttons{
+    display: flex;
+    gap: 30px;
+}
+.heroleft .btn-two{
+    border: none;
+    background-color: #fff;
+    font-size: 1.4rem;
+    color: #000;
 
-a {
-  text-decoration: none;
 }
+.heroRight{
+    width: 50%;
+    height: 600px;
+}
+.heroRight img{
+    border-radius: 20px;
+}
+/* ----------- /Hero-style ------------ */
 
-img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+/* ----------- say-style ------------ */
+.say{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 100px;
 }
+.say h2{
+    padding-top: 100px;
+    text-align: center;
+    color: #000;
+    font-weight: 500;
+    font-size: 2.8rem;
+}
+.say-container{
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+}
+.sayBoxs{
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fafafa;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 25%);
+}
+.sayBoxs .sayTop{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.sayTop img{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+}
+.sayinfo ul{
+    display: flex;
+}
+.sayinfo h3{
+    color: #000;
+    font-weight: 500;
+    font-size: 1.6rem;
+    padding-bottom: 5px;
+}
+.sayinfo li img{
+    display: flex;
+    width: 20px;
+    height: 20px;
+}
+.say-bottom p{
+    padding-top: 20px;
+    line-height: 1.5;
+    font-size: 1.4rem;
+    color: #00000099;
+}
+/* ----------- /say-style ------------ */
 
-.btn {
-  width: 125px;
-  height: 45px;
-  font-size: 1.6rem;
-  border-radius: 40px;
-  background-image: linear-gradient(45deg, #194bb5, #009de4 50%, #5ac8fa);
-  color: #fff;
-  border: none;
-  cursor: pointer;
+/* ----------- modules-style ------------ */
+.modules{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 100px;
 }
+.modules h2{
+    text-align: center;
+    width: 700px;
+    margin: auto;
+    font-size: 4rem;
+    font-weight: 600;
+    color: #000;
+}
+.modules-container {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+}
+.modulesTop{
+    height: 200px;
+    padding-bottom: 20px;
+}
+.modulesTop img{
+    border-radius: 10px;
+}
+.modulesBottom h3{
+    font-weight: 500;
+    font-size: 1.8rem;
+}
+.modulesBottom p{
+    padding-top: 10px;
+    font-weight: 500;
+    color: #00000099;
+    line-height: 1.5;
+    font-size: 1.4rem;
+}
+/* ----------- /modules-style ------------ */
 
-header {
-  position: fixed;
-  width: 100%;
-  height: 80px;
-  z-index: 100;
-  background-color: hsla(0deg, 0%, 100%, 0.96);
+/* ----------- own-style ------------ */
+.own{
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 100px;
 }
-header .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100%;
+.own-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);  
+    column-gap: 80px;
 }
-header .navbar .nav-menu {
-  display: flex;
-  align-items: center;
-  gap: 30px;
+.ownLeft img{
+    border-radius: 10px;
 }
-header .navbar .nav-menu a {
-  color: #000;
-  font-size: 1.4rem;
-  font-weight: 400;
+.ownRight h2{
+    font-size: 3rem;
+    color: #000;
+    padding-bottom: 20px;
+    font-weight: 600;
 }
-header .navbar .nav-menu .nav-btn .btn {
-  width: 125px;
-  height: 45px;
-  font-size: 1.6rem;
-  border-radius: 40px;
-  background-image: linear-gradient(45deg, #194bb5, #009de4 50%, #5ac8fa);
-  color: #fff;
-  border: none;
-  cursor: pointer;
+.ownRight p{
+    font-size: 1.6rem;
+    color: #00000099;
+    line-height: 1.5;
+    width: 80%;
+    padding-bottom: 20px;  
 }
-header .navbar .hamburger {
-  cursor: pointer;
-  display: none;
+.ownRight ul{
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
 }
-header .navbar .hamburger .line {
-  width: 35px;
-  height: 3px;
-  margin: 6px;
-  background-color: #000;
+.ownRight li{
+    list-style: circle;
+    margin-left: 15px;
 }
+.ownRight a{
+    font-size: 1.4rem;
+    color: #00000099;
+}
+/* ----------- /own-style ------------ */
 
-.hero {
-  position: relative;
-  top: 100px;
-  width: 100%;
-  height: auto;
-  padding-bottom: 50px;
+/* ----------- coures-style ------------ */
+.coures{
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 100px;
 }
-.hero .hero-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+.coures h2{
+    text-align: center;
+    width: 700px;
+    margin: auto;
+    font-size: 4rem;
+    font-weight: 600;
+    color: #000;
+    padding-bottom: 50px;
 }
-.hero .hero-container .heroLeft {
-  width: 100%;
-  align-self: center;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+.course-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 30px;
 }
-.hero .hero-container .heroLeft h1 {
-  font-size: 4.5rem;
-  width: 350px;
+.courseBoxs{
+    display: grid;
+    grid-template-columns: 80px 1fr;
 }
-.hero .hero-container .heroLeft h1 span {
-  color: linear-gradient(90deg, #0052d4, #4364f7 50%, #6fb1fc);
+.course-img{
+    align-self: start;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(45deg, #194bb5, #009de4 50%, #5ac8fa);
+    border-radius: 50%;
 }
-.hero .hero-container .heroLeft h1 .gradient-text {
-  background-image: linear-gradient(90deg, #0052d4, #4364f7 50%, #6fb1fc);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+.courseBoxs h3{
+    margin: auto;
+    font-size: 2rem;
+    font-weight: 400;
 }
-.hero .hero-container .heroLeft p {
-  font-size: 1.6rem;
-  line-height: 30px;
-  color: rgba(0, 0, 0, 0.6);
+.courseBoxs p{
+    margin: auto;
+    padding-top: 10px;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #00000099;
 }
-.hero .hero-container .heroLeft p:nth-last-child(2) {
-  color: #000;
-  font-size: 1.6rem;
-  font-weight: 400;
+.course-img img{
+    width: 30px;
+    height: 30px;
 }
-.hero .hero-container .heroLeft p:nth-last-child(2) span {
-  color: #000;
-  font-size: 2rem;
-  font-weight: 800;
-}
-.hero .hero-container .heroLeft .hero_btn {
-  display: flex;
-  gap: 20px;
-}
-.hero .hero-container .heroLeft .hero_btn button:nth-child(1) {
-  background-color: #0071e3;
-  background-image: linear-gradient(45deg, #194bb5, #009de4 50%, #5ac8fa);
-  color: #fff;
-  width: 140px;
-  height: 44px;
-  font-size: 1.6rem;
-  border: none;
-  border-radius: 40px;
-  cursor: pointer;
-}
-.hero .hero-container .heroLeft .hero_btn button {
-  border: none;
-  font-size: 1.6rem;
-  color: #000;
-  background-color: transparent;
-}
-.hero .hero-container .heroRight {
-  width: 100%;
-  height: 600px;
-}
-.hero .hero-container .heroRight img {
-  border-radius: 20px;
-}
+/* ----------- /coures-style ------------ */
 
-.say {
-  padding-top: 100px;
-  padding-bottom: 50px;
+/* ----------- featured-style ------------ */
+.featured{
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 100px;
 }
-.say h2 {
-  font-size: 2.5rem;
-  font-weight: 600;
-  text-align: center;
-  padding-bottom: 50px;
+.featured-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    text-align: center;
 }
-.say .say-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
+.featured h2{
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 50px;
 }
-.say .say-container .sayBoxs {
-  border-radius: 10px;
-  background-color: #fafafa;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
-  padding: 25px;
+.featureBox h3{
+    font-size: 2rem;
 }
-.say .say-container .sayBoxs .sayTop {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  padding-bottom: 20px;
-}
-.say .say-container .sayBoxs .sayTop img {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-}
-.say .say-container .sayBoxs .sayTop .sayTop-info h3 {
-  font-size: 1.6rem;
-  font-weight: 500;
-  padding-bottom: 5px;
-}
-.say .say-container .sayBoxs .sayTop .sayTop-info ul {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-.say .say-container .sayBoxs .sayTop .sayTop-info li img {
-  width: 20px;
-  height: 20px;
-}
-.say .say-container .sayBoxs .sayBottom p {
-  font-size: 1.2rem;
-  line-height: 20px;
-  color: rgba(0, 0, 0, 0.6);
-  text-align: left;
-}
+/* ----------- /featured-style ------------ */
 
-footer {
-  background-color: #fafafa;
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  height: auto;
-  padding: 20px 0;
+/* ----------- refund-style ------------ */
+.refund{
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 100px;
 }
-footer .foot_container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  height: 100%;
+.refund-container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px;
 }
-footer .foot_container .footLeft p {
-  font-size: 1.4rem;
-  color: rgba(0, 0, 0, 0.6);
+.refundLeft{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
-footer .foot_container .footRight ul {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+.refundLeft h2{
+    font-size: 3.5rem;
+    width: 80%;
 }
-footer .foot_container .footRight ul a {
-  font-size: 1.4rem;
-  color: rgba(0, 0, 0, 0.6);
-}/*# sourceMappingURL=style.css.map */
+.refundLeft p{
+    font-size: 1.6rem;
+    width: 80%;
+    color: #00000099;
+    line-height: 1.5;
+}
+.refundLeft p:nth-child(3){
+    color: #000;
+    font-size: 1.6rem;
+}
+.refundLeft p:nth-child(3) span{
+    color: #000;
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+.refundRight img{
+    border-radius: 20px;
+}
+/* ----------- /refund-style ------------ */
+
+/* ----------- happy-style ------------ */
+.happy{
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+.happy h2{
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    width: 25%;
+    margin: auto;
+    padding-bottom: 30px;
+}
+.happy-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+}
+.happyBoxs{
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fafafa;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 25%);
+}
+.happyTop p{
+    font-size: 1.2rem;
+    color: #00000099;
+    line-height: 1.5;
+    padding-bottom: 20px;
+}
+.happyBottom h3{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.happyBottom ul{
+    padding-top: 8px;
+    display: flex;
+    gap: 5px;
+}
+/* ----------- /happy-style ------------ */
+
+/* ----------- Ask-style ------------ */
+.ask{
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+.ask h2{
+    font-size: 2.8rem;
+    text-align: center;
+    padding-bottom: 35px;
+}
+.ask-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px;
+}
+.askRight{
+    background-color: #fafafa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 350px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+.askRight p{
+    font-size: 1.6rem;
+    color: #000;
+    padding-bottom: 5px;
+}
+.askRight p a{
+    color: #0052d4;
+}
+.ask-img{
+    width: 125px;
+    height: 125px;
+    padding-bottom: 10px;
+}
+.ask-img img{
+    border-radius: 50%;
+}
+.accordionBox{
+    background-color: #fafafa;
+    margin-bottom: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+}
+.accordionBox input{
+    display: none;
+}
+.accordionBox label{
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.accordionBox label h1{
+    font-size: 1,8rem;
+    color: #000;
+    font-weight: 500;
+}
+.accordionBox label i{
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+.accordionBox .content{
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+.accordionBox .content p{
+    padding-top: 20px;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: #00000099;
+}
+.accordion input:checked ~ .content{
+    max-height: 100%;
+}
+.accordion input:checked ~ label i::before{
+    content: "\f077";
+    transition: 0.3s ease;
+}
+/* ----------- /Ask-style ------------ */
+
+/* ----------- Footer-style ------------ */
+footer{
+    width: 100%;
+    background-color: #fafafa;
+    padding: 30px 0;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footerLeft p{
+    font-size: 1.4rem;
+    color: #00000099;
+}
+.footerRight ul{
+    display: flex;
+    gap: 30px;
+}
+.footerRight a{
+    font-size: 1.4rem;
+    color: #00000099;
+}
+/* ----------- /Footer-style ------------ */

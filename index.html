@@ -4,27 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/style.css">
+    <meta name="viewport" content="width=device-width, 
+    initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="/Responsive.css">
-    <title>selloc.com</title>
+    <title>Document</title>
 </head>
 
 <body>
-    <!-- Header_section -->
+
+    <!-- @@@@@@@@@@@@@@@@ -header-section- @@@@@@@@@@@@@@@@ -->
     <header>
-        <nav class="navbar container">
+        <nav class="navbar wrapper">
             <div class="logo">
-                <img src="/img/634e8cb7c0d3532845dde93d_SEllOC.svg" alt="logo.png">
+                <img src="/img/634e8cb7c0d3532845dde93d_SEllOC.svg" alt="logo">
             </div>
             <ul class="nav-menu">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Reviews</a></li>
-                <li><a href="#">FAQ</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#feature" class="nav-link">Features</a></li>
+                <li><a href="#review" class="nav-link">Reviews</a></li>
+                <li><a href="#faq" class="nav-link">FAQ</a></li>
                 <div class="nav-btn">
-                    <button type="button" class="btn">Buy Course</button>
+                    <button class="btn">Buy Course</button>
                 </div>
             </ul>
             <div class="hamburger">
@@ -34,111 +35,488 @@
             </div>
         </nav>
     </header>
-    <!-- /Header_section -->
+    <!-- /@@@@@@@@@@@@@@@@ -header-section- @@@@@@@@@@@@@@@@ -->
 
-    <!-- main_section -->
-    
-    <section class="hero">
-        <div class="hero-container container">
-            <div class="heroLeft">
-                <h1>It's your turn to stand out as a <span class="gradient-text">Web Designer</span></h1>
-                <p>Learn how to design the most impactful websites and build a successful career</p>
-                <p> <span>$249</span>  <del>$499</del> (50%OFF)
-                    </p>
-                <div class="hero_btn">
-                    <button>Buy Course</button>
-                    <button>Watch Intro</button>
-                </div>
-            </div>
-            <div class="heroRight">
-                <img src="/img/634e5d9714db41196fbadb7f_unsplash_4QhDfdkzHUY-min.jpg" alt="">
-            </div>
-        </div>
-    </section>
-    
-    <section class="say">
-        <h2>What people say:</h2>
-        <div class="say-container container">
-            <div class="sayBoxs">
-                <div class="sayTop">
-                    <img src="/img/63514b524053800fa8eec813_unsplash_XHVpWcr5grQ.png" alt="">
-                    <div class="sayTop-info">
-                        <h3>Suman Hood</h3>
-                        <ul>
-                            <li><img src="/img/63687a2e9011178b43e51637_star_gold.svg" alt="star"></li>
-                            <li><img src="/img/63687a2e9011178b43e51637_star_gold.svg" alt="star"></li>
-                            <li><img src="/img/63687a2e9011178b43e51637_star_gold.svg" alt="star"></li>
-                            <li><img src="/img/63687a2e9011178b43e51637_star_gold.svg" alt="star"></li>
-                            <li><img src="/img/63687a2e9011178b43e51637_star_gold.svg" alt="star"></li>
-                        </ul>
+    <!-- @@@@@@@@@@@@@@@@ -Main-section- @@@@@@@@@@@@@@@@ -->
+    <main>
+        <!-- -------------- Hero-section ------------- -->
+        <section class="hero">
+            <div class="hero-container wrapper">
+                <div class="heroleft">
+                    <h1>It's your turn to stand out as a <span class="gradient-text">Web Designer</span></h1>
+                    <p>Learn how to design the most impactful websites and build a successful career</p>
+                    <p><span>$249</span> <del>$499</del> (50%OFF</p>
+                    <div class="hero-buttons">
+                        <button class="btn">Buy Course</button>
+                        <button class="btn-two">Watch Intro <i class="fa fa-play-circle-o"></i></button>
                     </div>
                 </div>
-                <div class="sayBottom">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                <div class="heroRight">
+                    <img src="/img/634e5d9714db41196fbadb7f_unsplash_4QhDfdkzHUY-min.jpg" alt="hero-model">
                 </div>
             </div>
-            <div class="sayBoxs">
-                <div class="sayTop">
-                    <img src="/img/63514b524053804dfceec814_unsplash_IHIgnhLvz5Q.png" alt="">
-                    <div class="sayTop-info">
-                        <h3>Tamara Mcneil</h3>
-                        <ul>
-                            <li><img src="/img/63687a2e9011178b43e51637_star_gold.svg" alt="star"></li>
-                            <li><img src="/img/63687a2e9011178b43e51637_star_gold.svg" alt="star"></li>
-                            <li><img src="/img/63687a2e9011178b43e51637_star_gold.svg" alt="star"></li>
-                            <li><img src="/img/63687a2e9011178b43e51637_star_gold.svg" alt="star"></li>
-                            <li><img src="/img/63687a2e9011178b43e51637_star_gold.svg" alt="star"></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="sayBottom">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                </div>
-            </div>
-            <div class="sayBoxs">
-                <div class="sayTop">
-                    <img src="/img/63514b5292189b69cc8af504_unsplash_dt60oksDTx8.png" alt="">
-                    <div class="sayTop-info">
-                        <h3>Lucian Moran</h3>
-                        <ul>
-                            <li><img src="/img/63687a2e9011178b43e51637_star_gold.svg" alt="star"></li>
-                            <li><img src="/img/63687a2e9011178b43e51637_star_gold.svg" alt="star"></li>
-                            <li><img src="/img/63687a2e9011178b43e51637_star_gold.svg" alt="star"></li>
-                            <li><img src="/img/63687a2e9011178b43e51637_star_gold.svg" alt="star"></li>
-                            <li><img src="/img/63687a2e9011178b43e51637_star_gold.svg" alt="star"></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="sayBottom">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                </div>
-            </div>
-        </div>
+        </section>
+        <!-- -------------- /Hero-section ------------- -->
 
-    </section>
-    <!-- main_section -->
-    
-    <!-- Footer_section -->
+        <!-- -------------- What-say-section ------------- -->
+        <section class="say">
+            <h2>What people say:</h2>
+            <div class="say-container wrapper">
+                <div class="sayBoxs">
+                    <div class="sayTop">
+                        <img src="/img/63514b524053800fa8eec813_unsplash_XHVpWcr5grQ.png" alt="model">
+                        <div class="sayinfo">
+                            <h3>Suman Hood</h3>
+                            <ul>
+                                <li><img src="/img/63687a2e9011178b43e51637_star_gold.svg" alt="star"></li>
+                                <li><img src="/img/63687a2e9011178b43e51637_star_gold.svg" alt="star"></li>
+                                <li><img src="/img/63687a2e9011178b43e51637_star_gold.svg" alt="star"></li>
+                                <li><img src="/img/63687a2e9011178b43e51637_star_gold.svg" alt="star"></li>
+                                <li><img src="/img/63687a2e9011178b43e51637_star_gold.svg" alt="star"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="say-bottom">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua</p>
+                    </div>
+                </div>
+                <div class="sayBoxs">
+                    <div class="sayTop">
+                        <img src="/img/63514b524053804dfceec814_unsplash_IHIgnhLvz5Q.png" alt="model">
+                        <div class="sayinfo">
+                            <h3>Tamara Mcneil</h3>
+                            <ul>
+                                <li><img src="/img/63687a2e9011178b43e51637_star_gold.svg" alt="star"></li>
+                                <li><img src="/img/63687a2e9011178b43e51637_star_gold.svg" alt="star"></li>
+                                <li><img src="/img/63687a2e9011178b43e51637_star_gold.svg" alt="star"></li>
+                                <li><img src="/img/63687a2e9011178b43e51637_star_gold.svg" alt="star"></li>
+                                <li><img src="/img/63687a2e9011178b43e51637_star_gold.svg" alt="star"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="say-bottom">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua</p>
+                    </div>
+                </div>
+                <div class="sayBoxs">
+                    <div class="sayTop">
+                        <img src="/img/63514b5292189b69cc8af504_unsplash_dt60oksDTx8.png" alt="model">
+                        <div class="sayinfo">
+                            <h3>Lucian Moran</h3>
+                            <ul>
+                                <li><img src="/img/63687a2e9011178b43e51637_star_gold.svg" alt="star"></li>
+                                <li><img src="/img/63687a2e9011178b43e51637_star_gold.svg" alt="star"></li>
+                                <li><img src="/img/63687a2e9011178b43e51637_star_gold.svg" alt="star"></li>
+                                <li><img src="/img/63687a2e9011178b43e51637_star_gold.svg" alt="star"></li>
+                                <li><img src="/img/63687a2e9011178b43e51637_star_gold.svg" alt="star"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="say-bottom">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- -------------- /What-say-section ------------- -->
+
+        <!-- -------------- Modules-section ------------- -->
+        <section class="modules" id="about">
+            <h2>6 modules with <span class="gradient-text">interactive video</span>lessons</h2>
+            <div class="modules-container wrapper">
+                <div class="modulesBoxs">
+                    <div class="modulesTop">
+                        <img src="/img/63514b4b2a874d8f2845023a_unsplash_jJT2r2n7lYA-min.jpg" alt="">
+                    </div>
+                    <div class="modulesBottom">
+                        <h3>1. Introduction to UX design</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                            elementum tristique.</p>
+                    </div>
+                </div>
+                <div class="modulesBoxs">
+                    <div class="modulesTop">
+                        <img src="/img/63514b4b3885eadb4d4f2558_unsplash_v9FQR4tbIq8-min.jpg" alt="">
+                    </div>
+                    <div class="modulesBottom">
+                        <h3>2. UI animations design</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                            elementum tristique.</p>
+                    </div>
+                </div>
+                <div class="modulesBoxs">
+                    <div class="modulesTop">
+                        <img src="/img/63514b4b87c9237531aa729a_unsplash_IyaNci0CyRk-min.jpg" alt="">
+                    </div>
+                    <div class="modulesBottom">
+                        <h3>3. Atomic design and systems</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                            elementum tristique.</p>
+                    </div>
+                </div>
+                <div class="modulesBoxs">
+                    <div class="modulesTop">
+                        <img src="/img/63514b4baa30237036d40c9b_unsplash_Nzmyp6LsgNM-min.jpg" alt="">
+                    </div>
+                    <div class="modulesBottom">
+                        <h3>4. Designing for all screen sizes</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                            elementum tristique.</p>
+                    </div>
+                </div>
+                <div class="modulesBoxs">
+                    <div class="modulesTop">
+                        <img src="/img/63514b4c485d395da2fb5335_unsplash_iEiUITs149M-min.jpg" alt="">
+                    </div>
+                    <div class="modulesBottom">
+                        <h3>5. Combining it all on practice</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                            elementum tristique.</p>
+                    </div>
+                </div>
+                <div class="modulesBoxs">
+                    <div class="modulesTop">
+                        <img src="/img/63514b4b22107341b19d609a_unsplash_m_HRfLhgABo-min.jpg" alt="">
+                    </div>
+                    <div class="modulesBottom">
+                        <h3>6. Accents in web-design</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                            elementum tristique.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- -------------- /Modules-section ------------- -->
+
+        <!-- -------------- Own-section ------------- -->
+        <section class="own" id="feature">
+            <div class="own-container wrapper">
+                <div class="ownLeft">
+                    <img src="/img/634e90fe1c2d3c812287a369_unsplash_Vy2Y1cCLiT8-min.jpg" alt="">
+                </div>
+                <div class="ownRight">
+                    <h2>Break down popular websites' designs to create your own</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                        elementum tristique.</p>
+                    <ul>
+                        <li><a href="#">Figma</a></li>
+                        <li><a href="#">Webflow</a></li>
+                        <li><a href="#">And others!</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- -------------- /Own-section ------------- -->
+
+        <!-- -------------- Course-section ------------- -->
+        <section class="coures">
+            <h2>Is this course <span class="gradient-text">for you?</span></h2>
+            <div class="course-container wrapper">
+                <div class="courseBoxs">
+                    <div class="course-img">
+                        <img src="/img/634e5d9714db4107d0badb93_Mortarboard.png" alt="mortarboard">
+                    </div>
+                    <div>
+                        <h3>You have never worked in design</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                            elementum tristique.</p>
+                    </div>
+                </div>
+                <div class="courseBoxs">
+                    <div class="course-img">
+                        <img src="/img/634e5d9714db411ac6badb92_Laptop.png" alt="mortarboard">
+                    </div>
+                    <div>
+                        <h3>You love visually appealing things</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                            elementum tristique.</p>
+                    </div>
+                </div>
+                <div class="courseBoxs">
+                    <div class="course-img">
+                        <img src="/img/634e5d9714db414ed7badb91_Picture.png" alt="mortarboard">
+                    </div>
+                    <div>
+                        <h3>You like analyzing websites</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                            elementum tristique.</p>
+                    </div>
+                </div>
+                <div class="courseBoxs">
+                    <div class="course-img">
+                        <img src="/img/634e5d9714db41ae84badb8f_Pen.png" alt="mortarboard">
+                    </div>
+                    <div>
+                        <h3>You fancy typography</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                            elementum tristique.</p>
+                    </div>
+                </div>
+                <div class="courseBoxs">
+                    <div class="course-img">
+                        <img src="/img/634e5d9714db41b679badb94_Code.png" alt="mortarboard">
+                    </div>
+                    <div>
+                        <h3>You want to be able to work remotely</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                            elementum tristique.</p>
+                    </div>
+                </div>
+                <div class="courseBoxs">
+                    <div class="course-img">
+                        <img src="/img/634e5d9714db41aae4badb90_Font Size.png" alt="mortarboard">
+                    </div>
+                    <div>
+                        <h3>You want to learn a new profession</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                            elementum tristique.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- -------------- /Course-section ------------- -->
+
+        <!-- -------------- featured-section ------------- -->
+        <section class="featured">
+            <h2>As featured in:</h2>
+            <div class="featured-container wrapper">
+                <div class="featureBox">
+                    <h3>LOGOHOLDER</h3>
+                </div>
+                <div class="featureBox">
+                    <h3>LOGOHOLDER</h3>
+                </div>
+                <div class="featureBox">
+                    <h3>LOGOHOLDER</h3>
+                </div>
+                <div class="featureBox">
+                    <h3>LOGOHOLDER</h3>
+                </div>
+            </div>
+        </section>
+        <!-- -------------- /feature-section ------------- -->
+
+        <!-- -------------- Refund-section ------------- -->
+        <section class="refund">
+            <div class="refund-container wrapper">
+                <div class="refundLeft">
+                    <h2>Get 100% refund if you change your mind</h2>
+                    <p>If you change your mind within 7 days after the course start, we will return your money back</p>
+                    <p><span>$249</span> <del>$499</del> (50%OFF</p>
+                    <button class="btn">Buy Course</button>
+                </div>
+                <div class="refundRight">
+                    <img src="/img/63514bd1a3aad36e5589bf64_unsplash_8h3EiAsfIFU-min.jpg" alt="lady working on laptop">
+                </div>
+            </div>
+        </section>
+        <!-- -------------- /Refund-section ------------- -->
+
+        <!-- -------------- Happy-section ------------- -->
+        <section class="happy" id="review">
+            <h2 class="wrapper">Join over 500,000 happy students from all over the world</h2>
+            <div class="happy-container wrapper">
+                <div class="happyBoxs">
+                    <div class="happyTop">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua</p>
+                    </div>
+                    <div class="happyBottom">
+                        <h3>Abdullah Haas</h3>
+                        <ul>
+                            <li><img src="/img/63687a2e9011178b43e51637_star_gold.svg" alt="star"></li>
+                            <li><img src="/img/63687a2e9011178b43e51637_star_gold.svg" alt="star"></li>
+                            <li><img src="/img/63687a2e9011178b43e51637_star_gold.svg" alt="star"></li>
+                            <li><img src="/img/63687a2e9011178b43e51637_star_gold.svg" alt="star"></li>
+                            <li><img src="/img/63687a2e9011178b43e51637_star_gold.svg" alt="star"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="happyBoxs">
+                    <div class="happyTop">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua</p>
+                    </div>
+                    <div class="happyBottom">
+                        <h3>Manav Kennedy</h3>
+                        <ul>
+                            <li><img src="/img/63687a2e9011178b43e51637_star_gold.svg" alt="star"></li>
+                            <li><img src="/img/63687a2e9011178b43e51637_star_gold.svg" alt="star"></li>
+                            <li><img src="/img/63687a2e9011178b43e51637_star_gold.svg" alt="star"></li>
+                            <li><img src="/img/63687a2e9011178b43e51637_star_gold.svg" alt="star"></li>
+                            <li><img src="/img/63687a2e9011178b43e51637_star_gold.svg" alt="star"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="happyBoxs">
+                    <div class="happyTop">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua</p>
+                    </div>
+                    <div class="happyBottom">
+                        <h3>Annette Green</h3>
+                        <ul>
+                            <li><img src="/img/63687a2e9011178b43e51637_star_gold.svg" alt="star"></li>
+                            <li><img src="/img/63687a2e9011178b43e51637_star_gold.svg" alt="star"></li>
+                            <li><img src="/img/63687a2e9011178b43e51637_star_gold.svg" alt="star"></li>
+                            <li><img src="/img/63687a2e9011178b43e51637_star_gold.svg" alt="star"></li>
+                            <li><img src="/img/63687a2e9011178b43e51637_star_gold.svg" alt="star"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="happyBoxs">
+                    <div class="happyTop">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua</p>
+                    </div>
+                    <div class="happyBottom">
+                        <h3>Saarah Buckley</h3>
+                        <ul>
+                            <li><img src="/img/63687a2e9011178b43e51637_star_gold.svg" alt="star"></li>
+                            <li><img src="/img/63687a2e9011178b43e51637_star_gold.svg" alt="star"></li>
+                            <li><img src="/img/63687a2e9011178b43e51637_star_gold.svg" alt="star"></li>
+                            <li><img src="/img/63687a2e9011178b43e51637_star_gold.svg" alt="star"></li>
+                            <li><img src="/img/63687a2e9011178b43e51637_star_gold.svg" alt="star"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="happyBoxs">
+                    <div class="happyTop">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua</p>
+                    </div>
+                    <div class="happyBottom">
+                        <h3>Ziva Drake</h3>
+                        <ul>
+                            <li><img src="/img/63687a2e9011178b43e51637_star_gold.svg" alt="star"></li>
+                            <li><img src="/img/63687a2e9011178b43e51637_star_gold.svg" alt="star"></li>
+                            <li><img src="/img/63687a2e9011178b43e51637_star_gold.svg" alt="star"></li>
+                            <li><img src="/img/63687a2e9011178b43e51637_star_gold.svg" alt="star"></li>
+                            <li><img src="/img/63687a2e9011178b43e51637_star_gold.svg" alt="star"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="happyBoxs">
+                    <div class="happyTop">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua</p>
+                    </div>
+                    <div class="happyBottom">
+                        <h3>Anya Lopez</h3>
+                        <ul>
+                            <li><img src="/img/63687a2e9011178b43e51637_star_gold.svg" alt="star"></li>
+                            <li><img src="/img/63687a2e9011178b43e51637_star_gold.svg" alt="star"></li>
+                            <li><img src="/img/63687a2e9011178b43e51637_star_gold.svg" alt="star"></li>
+                            <li><img src="/img/63687a2e9011178b43e51637_star_gold.svg" alt="star"></li>
+                            <li><img src="/img/63687a2e9011178b43e51637_star_gold.svg" alt="star"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- -------------- /Happy-section ------------- -->
+
+        <!-- -------------- Ask-section ------------- -->
+        <section class="ask" id="faq">
+            <h2>People often ask:</h2>
+            <div class="ask-container wrapper">
+                <div class="askLeft">
+                    <div class="accordion">
+                        <div class="accordionBox">
+                            <input type="radio" name="tab" id="tab-1" checked>
+                            <label for="tab-1">
+                                <h1>What's the course length?</h1>
+                                <i class="fa fa-chevron-down"></i>
+                            </label>
+                            <div class="content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                            </div>
+                        </div>
+                        <div class="accordionBox">
+                            <input type="radio" name="tab" id="tab-2">
+                            <label for="tab-2">
+                                <h1>What payment do you accept?</h1>
+                                <i class="fa fa-chevron-down"></i>
+                            </label>
+                            <div class="content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                            </div>
+                        </div>
+                        <div class="accordionBox">
+                            <input type="radio" name="tab" id="tab-3">
+                            <label for="tab-3">
+                                <h1>What is your refund policy?</h1>
+                                <i class="fa fa-chevron-down"></i>
+                            </label>
+                            <div class="content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                            </div>
+                        </div>
+                        <div class="accordionBox">
+                            <input type="radio" name="tab" id="tab-4">
+                            <label for="tab-4">
+                                <h1>Will i got a Certificate upon comppletion?</h1>
+                                <i class="fa fa-chevron-down"></i>
+                            </label>
+                            <div class="content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="askRight">
+                    <div class="ask-img">
+                        <img src="/img/6352766c62d088aaa260d5cf_unsplash_XHVpWcr5grQ-min.jpg" alt="girl">
+                    </div>
+                    <p>Have a question?</p>
+                    <p>Ask our manager Alina via <a href=""> hi@sellioc.com</a></p>
+                </div>
+            </div>
+        </section>
+        <!-- -------------- /Ask-section ------------- -->
+
+        <!-- -------------- Refund-section ------------- -->
+        <section class="refund">
+            <div class="refund-container wrapper">
+                <div class="refundLeft">
+                    <h2>Build a successful career as a Web Designer</h2>
+                    <p>Learn how to design the most impactful websites and build a successful career</p>
+                    <p><span>$249</span> <del>$499</del> (50%OFF</p>
+                    <button class="btn">Buy Course</button>
+                </div>
+                <div class="refundRight">
+                    <img src="/img/634e8c5942c352f472ec1cbc_unsplash_4QhDfdkzHUY-min.jpg" alt="man working on laptop">
+                </div>
+            </div>
+        </section>
+        <!-- -------------- /Refund-section ------------- -->
+
+    </main>
+    <!-- /@@@@@@@@@@@@@@@@ -Main-section- @@@@@@@@@@@@@@@@ -->
+
+    <!-- @@@@@@@@@@@@@@@@ -Footer-section- @@@@@@@@@@@@@@@@ -->
     <footer>
-        <div class="foot_container container">
-            <div class="footLeft">
-                <p>© <span id="current-year"></span> All rights are reserved</p>
+        <div class="footer-container wrapper">
+            <div class="footerLeft">
+                <p>©<span id="current-year"></span> All rights are reserved</p>
             </div>
-            <div class="footRight">
+            <div class="footerRight">
                 <ul>
-                    <li><a href="#">Powered by Webflow</a></li>
-                    <li><a href="#">Designed by Anastasiia</a></li>
-                    <li><a href="#">Licencing
-                        </a></li>
-                    <li><a href="#">Style Guide</a></li>
-                    <li><a href="#">Changelog</a></li>
+                    <li><a href="">Powered by Webflow</a></li>
+                    <li><a href="">Designed by Anastasiia</a></li>
+                    <li><a href="">Licencing</a></li>
+                    <li><a href="">Style Guide</a></li>
+                    <li><a href="">Changelog</a></li>
                 </ul>
             </div>
         </div>
     </footer>
-    <!-- /Footer_section -->
-
-    <script src="/main.js"></script>
+    <!-- /@@@@@@@@@@@@@@@@ -Footer-section- @@@@@@@@@@@@@@@@ -->
+    <script src="https://kit.fontawesome.com/edcd5c8c16.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
